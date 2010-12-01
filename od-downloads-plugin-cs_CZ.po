@@ -1,0 +1,212 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: odWpDownloadsPlugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-31 02:40+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ondrej Donek <ondrejd@gmail.com>\n"
+"Language-Team:  <ondrejd@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: od-downloads-plugin.php:118
+#: od-downloads-plugin.php:119
+#: od-downloads-plugin.php:153
+msgid "Downloads"
+msgstr "Soubory ke stažení"
+
+#: od-downloads-plugin.php:125
+#: od-downloads-plugin.php:431
+msgid "Downloads - Add new item"
+msgstr "Soubory ke stažení - Přidej novou položku"
+
+#: od-downloads-plugin.php:126
+msgid "Add item"
+msgstr "Přidej nový"
+
+#: od-downloads-plugin.php:131
+#: od-downloads-plugin.php:479
+msgid "Downloads - Settings"
+msgstr "Soubory ke stažení - Nastavení"
+
+#: od-downloads-plugin.php:132
+msgid "Settings"
+msgstr "Nastavení"
+
+#: od-downloads-plugin.php:161
+#: od-downloads-plugin.php:165
+msgid "No items selected"
+msgstr "Nebyly vybrány žádné položky"
+
+#: od-downloads-plugin.php:176
+msgid "Deleted items count: "
+msgstr "Smazaných položek: "
+
+#: od-downloads-plugin.php:189
+msgid "Edit item #"
+msgstr "Edituj položku #"
+
+#: od-downloads-plugin.php:195
+#: od-downloads-plugin.php:253
+#: od-downloads-plugin.php:262
+#: od-downloads-widget.php:81
+msgid "Title"
+msgstr "Název"
+
+#: od-downloads-plugin.php:199
+msgid "Thumbnail"
+msgstr "Náhledový obrázek"
+
+#: od-downloads-plugin.php:203
+#: od-downloads-plugin.php:255
+#: od-downloads-plugin.php:264
+msgid "File to download"
+msgstr "Soubor ke stažení"
+
+#: od-downloads-plugin.php:208
+#: od-downloads-plugin.php:452
+msgid "Display this item on the public site?"
+msgstr "Zobrazovat položku na stránkách?"
+
+#: od-downloads-plugin.php:214
+#: od-downloads-plugin.php:458
+#: od-downloads-plugin.php:515
+msgid "Save"
+msgstr "Uložit"
+
+#: od-downloads-plugin.php:231
+msgid "Item was successfully updated."
+msgstr "Položka byla úspěšně aktualizována."
+
+#: od-downloads-plugin.php:241
+#: od-downloads-plugin.php:275
+msgid "Multiple actions"
+msgstr "Hromadné akce"
+
+#: od-downloads-plugin.php:242
+#: od-downloads-plugin.php:276
+msgid "Delete"
+msgstr "Vymazat"
+
+#: od-downloads-plugin.php:244
+#: od-downloads-plugin.php:278
+msgid "Apply"
+msgstr "Provést"
+
+#: od-downloads-plugin.php:254
+#: od-downloads-plugin.php:263
+msgid "Image file"
+msgstr "Soubor obrázku"
+
+#: od-downloads-plugin.php:256
+#: od-downloads-plugin.php:265
+msgid "Display"
+msgstr "Zobrazit"
+
+#: od-downloads-plugin.php:307
+msgid "No items created yet."
+msgstr "Zatím nebyly ještě vytvořeny žádné položky."
+
+#: od-downloads-plugin.php:320
+msgid "yes"
+msgstr "ano"
+
+#: od-downloads-plugin.php:320
+msgid "no"
+msgstr "ne"
+
+#: od-downloads-plugin.php:361
+msgid "File to download was not successfully uploaded to the server!"
+msgstr "Soubor ke stažení nebyl úspěšně nahrán na server!"
+
+#: od-downloads-plugin.php:373
+msgid "You can upload only images of <code>JPG</code> type!"
+msgstr "Můžete nahrávat pouze obrázky typu <code>JPG</code>!"
+
+#: od-downloads-plugin.php:399
+msgid "Image was not successfully uploaded!"
+msgstr "Obrázek nebyl úspěšně nahrán na server!"
+
+#: od-downloads-plugin.php:412
+msgid "Item was successfully created (with ID <code>"
+msgstr "Položka byla úspěšně vytvořena (s ID <code>"
+
+#: od-downloads-plugin.php:418
+msgid "Item was not successfully created!"
+msgstr "Položka nebyla úspěšně vytvořena!"
+
+#: od-downloads-plugin.php:436
+msgid "Title:"
+msgstr "Název:"
+
+#: od-downloads-plugin.php:440
+msgid "Thumbnail:"
+msgstr "Náhledový obrázek:"
+
+#: od-downloads-plugin.php:443
+msgid "Upload only images of the <code>JPEG</code> type (file extension <code>.jpg</code>). Uploaded images will be resized to width 146 of pixels."
+msgstr "Nahrávejte pouze obrázky typu <code>JPEG</code> (koncovka souboru <code>.jpg</code>). Nahrané obrázky budou zmenšeny na šířku 146 pixelů."
+
+#: od-downloads-plugin.php:447
+msgid "File to download:"
+msgstr "Souborů ke stažení:"
+
+#: od-downloads-plugin.php:489
+msgid "Settings updated."
+msgstr "Nastavení aktualizováno."
+
+#: od-downloads-plugin.php:498
+msgid "Insert ID of page, where you want to display downloads list:"
+msgstr "Vložte ID stránky, kde chcete zobrazovat seznam položek ke stažení:"
+
+#: od-downloads-plugin.php:502
+msgid "Insert relative path to downloads directory:"
+msgstr "Vložte relativní cestu adresáře, ve kterém se budou ukládat soubory ke stažení:"
+
+#: od-downloads-plugin.php:506
+msgid "Insert max. width for the thumbnail images:"
+msgstr "Zadejte maximální šířku náhledových obrázků:"
+
+#: od-downloads-plugin.php:507
+msgid "pixels"
+msgstr "pixelů"
+
+#: od-downloads-plugin.php:510
+msgid "Set the count of items displayed in the short list:"
+msgstr "Nastavte maximální počet položek v krátkém seznamu:"
+
+#: od-downloads-plugin.php:511
+msgid "items"
+msgstr "položek"
+
+#: od-downloads-plugin.php:572
+#: od-downloads-plugin.php:602
+msgid "No items found."
+msgstr "Žádné položky nebyly nalezeny."
+
+#: od-downloads-widget.php:15
+msgid "Widget of 'Downloads' plugin. It can displays list of files."
+msgstr "Widget pluginu 'Ke stažení'. Zobrazuje seznam nahraných souborů."
+
+#: od-downloads-widget.php:22
+#: od-downloads-widget.php:75
+msgid "Files to download"
+msgstr "Soubory ke stažení"
+
+#: od-downloads-widget.php:50
+msgid "Next"
+msgstr "Další"
+
+#: od-downloads-widget.php:85
+msgid "Max. count of items"
+msgstr "Max. počet položek"
+
+#: od-downloads-widget.php:90
+msgid "Display thumnails or plain links?"
+msgstr "Zobrazovat náhledové obrázky nebo jen odkazy?"
+
