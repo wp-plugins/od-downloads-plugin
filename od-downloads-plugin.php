@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Plugin 'Ke stažení'
-Plugin URI: http://ondrejd.info/projects/wordpress-plugins/
-Description: Plugin zajišťující správu souborů ke stažení pro stránky <a href="http://www.volby09.cz/">www.volby09.cz</a>.
-Author: Ondřej Doněk
-Version: 0.4
+Plugin Name: odDownloadsPlugin
+Plugin URI: http://www.ondrejd.info/projects/wordpress-plugins/od-downloads-plugin/
+Description: Plugin for administrating files to download for your site.
+Author: Ondrej Donek
+Version: 0.4.1
 Author URI: http://www.ondrejd.info/
 */
 
