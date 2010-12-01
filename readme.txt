@@ -4,15 +4,16 @@ Donate link: http://www.ondrejd.info/projects/wordpress-plugins/od-downloads-plu
 Tags: media,downloads
 Requires at least: 2.8
 Tested up to: 3.0.2
-Stable tag: 0.5
+Stable tag: 0.4.1
 
-Plugin for administrating files to download for your site.
+Manager for files that you want to offer to visitors of your pages. Allow to use either sidebar widget or whole dowload page.
 
 == Description ==
 
 Main features:
 
 * creates list of files to download with cover images
+* widget for your sidebars
 * offers English and Czech locales
 
 == Installation ==
@@ -35,11 +36,15 @@ Answer ...
 1. `screenshot-1.png`
 2. `screenshot-2.png`
 3. `screenshot-3.png`
+3. `screenshot-4.png`
+3. `screenshot-5.png`
 
 == Changelog ==
 
 = 0.4.1 =
 * plugin development recovered
+* [fixed] settings can not be saved
+* [fixed] creating new downloads
 * added readme.txt file and updated description
 
 = 0.4 =

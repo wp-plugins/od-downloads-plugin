@@ -2,7 +2,7 @@
 /*
 Plugin Name: odDownloadsPlugin
 Plugin URI: http://www.ondrejd.info/projects/wordpress-plugins/od-downloads-plugin/
-Description: Plugin for administrating files to download for your site.
+Description: Manager for files that you want to offer to visitors of your pages. Allow to use either sidebar widget or whole dowload page.
 Author: Ondrej Donek
 Version: 0.4.1
 Author URI: http://www.ondrejd.info/
@@ -25,10 +25,10 @@ class odWpDownloadsPlugin /* XXX extends WP_Plugin */
   static $textdomain;
   
   var $default_options = array(
-	  'main_downloads_dir' => 'wp-content/ke-stazeni/',
-	  'downloads_page_id'  => 0,
-	  'downloads_thumb_size_width' => 146,
-	  'downloads_shortlist_max_count' => 2
+			'main_downloads_dir' => 'wp-content/downloads/',
+			'downloads_page_id'  => 0,
+			'downloads_thumb_size_width' => 146,
+			'downloads_shortlist_max_count' => 2
   );
   
   /**
@@ -40,7 +40,7 @@ class odWpDownloadsPlugin /* XXX extends WP_Plugin */
   {
 	// Set up the plugin
 	odWpDownloadsPlugin::$plugin_id = 'od-downloads-plugin';
-	odWpDownloadsPlugin::$version = '0.4';
+	odWpDownloadsPlugin::$version = '0.4.1';
 	odWpDownloadsPlugin::$textdomain = odWpDownloadsPlugin::$plugin_id;
 	
 	// Initialize the plugin
@@ -375,14 +375,17 @@ class odWpDownloadsPlugin /* XXX extends WP_Plugin */
 		$filename = basename($file['name']);
 		$uploadfile = $uploaddir . DIRECTORY_SEPARATOR . $filename;
 		
+		//echo "<code>$uploaddir</code>";
+		//echo "<code>$uploadfile</code>";
+		
 		// XXX Check `max_upload_filesize` value!!!
 		if(@move_uploaded_file($file['tmp_name'], $uploadfile)) {
-		  $file_upload_failed = false;
-		}
+				$file_upload_failed = false;
+			}
 	  }
 	  
 	  if($file_upload_failed === true) {
-		$error_msgs[] = __('File to download was not successfully uploaded to the server!', odWpDownloadsPlugin::$textdomain);
+			$error_msgs[] = __('File to download was not successfully uploaded to the server!', odWpDownloadsPlugin::$textdomain);
 	  }
 	  
 	  // Upload and resize thumbnail image
@@ -454,7 +457,7 @@ class odWpDownloadsPlugin /* XXX extends WP_Plugin */
 	  </div>
 	  <h2><?php echo __('Downloads - Add new item', odWpDownloadsPlugin::$textdomain);?></h2>
 	  <div id="downloadshelpdiv" class="postbox" style="width: 90%; padding: 10px 20px 10px 20px;">
-		<form action="<?php echo get_option('home');?>/wp-admin/admin.php?page=od-downloads-add" method="post" enctype="multipart/form-data">
+		<form action="<?php echo get_option('home');?>/wp-admin/admin.php?page=od-downloads-plugin-add" method="post" enctype="multipart/form-data">
 		  <table cellspacing="1" cellpadding="1" style="width: 90%;">
 			<tr>
 			  <th scope="row" style="text-align:left; min-width: 190px;"><label for="title"><?php echo __('Title:', odWpDownloadsPlugin::$textdomain);?></label></th>
@@ -507,7 +510,7 @@ class odWpDownloadsPlugin /* XXX extends WP_Plugin */
 	  $options['downloads_page_id'] = (int) $_POST['option-download_page_id']; 
 	  $options['downloads_thumb_size_width'] = (int)$_POST['option-downloads_thumb_size_width'];
 	  $options['downloads_shortlist_max_count'] = (int) $_POST['option-downloads_shortlist_max_count'];
-	  update_option('site_customization-options', $options);
+	  update_option(odWpDownloadsPlugin::$plugin_id . '-options', $options);
     ?>
 	  <div id="message" class="updated fade">
 		<p><?php echo __('Settings updated.', odWpDownloadsPlugin::$textdomain);?></p>
@@ -515,7 +518,7 @@ class odWpDownloadsPlugin /* XXX extends WP_Plugin */
 <?php
 	}
 ?>
-	  <form action="<?php echo get_option('home');?>/wp-admin/admin.php?page=od-downloads-settings" method="post" enctype="multipart/form-data">
+	  <form action="<?php echo get_option('home');?>/wp-admin/admin.php?page=od-downloads-plugin-settings" method="post" enctype="multipart/form-data">
 		<div>
 		  <table class="widefat post fixed" cellpadding="1" cellspacing="1" style="100%;">
 			<tr>
